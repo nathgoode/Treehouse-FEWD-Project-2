@@ -1,0 +1,342 @@
+/* ---- Base Element Styles ---- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Sorts Mill Goudy', serif;
+	background-color: #f6f4f4;
+	text-align: center;
+}
+
+.main {
+	background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+li {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+.portfolio {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.skills {
+	background: white;
+	margin-bottom: 5px;
+}
+
+/* ---- Base Layout Styles ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.intro {
+	text-align: center;
+}
+
+.contact-area {
+	background-color: #f6f4f4;
+}
+
+/* ---- Navigation ---- */
+
+nav {
+  text-align: center;
+  padding: 10px 0;
+  margin: 20px 0 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+  
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #093a58;
+	text-transform: uppercase;
+}
+
+/*.main-nav a:hover,
+.footer-nav a:hover {
+	color: #ffffff;
+	background-color: blue;
+	border-radius: 5%;
+}*/
+
+a:hover {
+	color: #3acec2;
+}
+
+.main-nav li {
+	background-color: white;
+	margin: 5px 5px;
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.col {
+	padding-right: 5px;
+	padding-left: 5px;
+	text-align: center;
+}
+
+.portfolio {
+	padding: 10px 10px;
+}
+
+.skills {
+	padding-top: 10px;
+}
+
+
+/* ---- Footer ---- */
+
+footer {
+  font-size: 0.75em;
+  text-align: center;
+  clear: both;
+  color: #ccc;
+  background-color: #f6f4f4;
+}
+
+.footer-nav {
+	visibility: hidden;
+}
+
+.contact-info {
+    margin: 0 auto 20px auto;
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+}
+
+.contact-area p {
+    margin: auto;
+    text-align: center;
+    max-width: 90%;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  color: orange;
+  padding: 5px 10px;
+  margin: 5px 5px;
+}
+
+.footer-name{
+	float: left;
+	margin-left: 10px;
+}
+
+.footer-back {
+	float: right;
+	margin-right: 10px;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/* ================================= 
+  Tablet
+==================================== */
+
+@media (min-width: 768px) {
+
+	.container {
+		margin: 0 auto;
+	}
+
+	p {
+		padding: 0 10px;
+	}
+
+	.image {
+		float: right;
+		width: 40%;
+	}
+
+	.intro {
+		float: left;
+		width: 60%;
+		text-align: left;
+	}
+
+	.col {
+		float: left;
+	}
+
+	.first,
+	.second,
+	.third,
+	.fourth,
+	.fifth,
+	.sixth	{
+		width: 50%;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.main-nav li {
+		display: inline-block;
+	}
+
+	.main-nav li {
+	background-color: #f6f4f4;
+	margin: 5px 5px;
+	}
+
+
+
+	.contact-area{
+        margin: 0;
+        padding-top: 1px;
+    }
+    
+    .contact-area p {
+	    text-align: center;
+	    margin: 0 20%;
+    }
+
+	.footer-nav {
+		visibility: visible;
+		/*margin: -50px 2.5% 0 0;*/
+		float: right;	
+	}
+	
+	.footer-nav li{
+		display: inline-block;
+	}
+	
+	.footer-name {
+		float: left;
+	}
+	
+	.footer-back {
+		display: none;
+	}
+    hr {
+	   margin: 20px 5%;    
+    }
+
+	.skills li {
+  	display: inline-block;
+	}
+
+}
+
+/* ================================= 
+  Desktop
+==================================== */
+
+@media (min-width: 1024px) {
+
+	.container {
+		width: 90%;
+		max-width: 1150px;
+	}
+
+	.image {
+		float: right;
+		width: 40%;
+	}
+
+	.intro {
+		float: left;
+		width: 60%;
+		text-align: left;
+	}
+	
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		float: left;
+		margin-left: 15px;
+	}
+
+	.main-nav li {
+	background-color: #f6f4f4;
+	margin: 5px 5px;
+	}
+
+	.name {
+		float: left;
+		margin-top: 15px;
+	}
+
+	.first,
+	.second,
+	.third,
+	.fourth,
+	.fifth,
+	.sixth	{
+		width: 33%;
+		padding: 0px 10px 0px 10px;
+	}
+	.footer-name{
+	float: left;
+	margin-left: 70px;
+	}
+
+	.footer-nav {
+		margin-right: 45px;	
+		
+	}
+
+}
